@@ -50,7 +50,8 @@ app.get('/',(req,res)=>{
     /// codes move to controller
 // })
 
-mongoose.connect("mongodb+srv://surya:crud-operation@cluster0.n3viqef.mongodb.net/crud?retryWrites=true&w=majority&appName=Cluster0")
+mongoose.connect({//YOUR MONGODB CONNECTIVITY}
+    )
 .then(()=>{
     console.log("connected to database!");
     app.listen(port, ()=>{
